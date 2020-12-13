@@ -1,0 +1,94 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/*Basic SetupStuff*/
+
+body{
+background-color: #E6E4D7;
+padding: 2%;
+	/*Fade Animation!*/
+opacity: 1;
+transition: 1.2s opacity;
+}
+/*Fade Animation!*/
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+
+h1{
+	font-family: 'crimson-text';
+	font-style: italic;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 37px;
+	color: black;
+}
+h2{
+	font-family: pt-sans-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: black;
+	line-height: 26px;
+}
+h3{
+	font-family: hind,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+}
+p{
+	font-family: hind,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: black;
+}
+blockquote{
+	font-weight:bold;
+	font-variant-caps: normal;
+}
+
+/*making the logo static & the same size*/
+
+#logo{
+	position:fixed;
+	width: 82px;
+	height: 50px;
+	right: 10px;
+	top: 10px;
+	z-index: 10;
+}
+
+/*Now Here is the stuff for the top parts of the- not-home pages!*/
+
+/*establish the size change for the titlese*/
+h1.page-title {
+	font-size:40px;
+	line-height: normal;
+	font-weight:bold;
+}
+/* set the larger frame backs for the title of each page so that they corrospond with the color that the bod was originally*/
+#startopopen{
+	background-color: #FF6633 ;
+}
+/*I changed the text color here too, to make the top be readable*/
+#meetpopen{
+	background-color: #440E62 ;
+	color: white;
+}
+#hstopopen{
+	background-color: #9999CC ;
+}
+#dvtopopen{
+	background-color: #FF99CC ;
+}
+
+
+
+
+
+
+

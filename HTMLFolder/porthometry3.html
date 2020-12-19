@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>HomePageRACHEL</title>
+	<link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<link href="PortfolioMain.css" rel="stylesheet" type="text/css">
+	<!--fonts!-->
+	<link rel="stylesheet" href="https://use.typekit.net/rkl7csz.css">
+</head>
+
+<body class="fade">
+	<!--Fade on page load gotta be in front b/c order of loading!!-->
+	<script>
+		document.body.className = 'fade';
+	</script>
+	<!--Logo fixed at top of page is the nav!-->
+	<img src="LOGO REDO.png" id="logo" alt="Rachel L Jones" onMouseOver="this.class='slide-fwd-center'">
+	<br>
+	<!--
+	Here is the container holding of the places you can go on the page 
+	I used fluid containers to span the whole page
+	
+	It resizes for lg md and sm, I figured xs and xl would kind a work right, atleast for what I'm looking for, so I din't really bother with that.
+-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6" id="meetbox">
+				<br>
+				<!--I put breaks before every image element so that they would stack and look nice in the xs view and so there would always be a visual break between rows when they began exsisting-->
+				<!--<img src="Group 9Rachelbox.png" id="rachelbox">-->
+				<a><img src="Group 4.png" onMouseOver="this.src='MeetRollover.png';"
+						onMouseOut="this.src='Group 4.png';" width="100%"></a>
+			</div>
+			<div class="col-lg-3 col-md-4 offset-md-4 offset-lg-6 col-sm-6 offset-sm-0">
+				<br>
+				<a href="StarwalkUSING1.html">
+					<img src="Group 3.png" onMouseOver="this.src='SWrollover.png';" onMouseOut="this.src='Group 3.png';"
+						width="100%"></a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 offset-md-4 offset-sm-0 offset-lg-6">
+				<br>
+				<img src="Group 6.png" width="100%" height="97%" onMouseOver="this.src='DVcardhover.png';"
+					onMouseOut="this.src='Group 6.png';" class="img-fluid">
+			</div>
+			<div class="col-lg-3 col-md-4 offset-lg-0 col-sm-6">
+				<br><a href="HurriSafe.html"><img src="Group 5.png" onMouseOver="this.src='HSrollover.png';"
+						onMouseOut="this.src='Group 5.png';" width="100%"></a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<script>
+		document.addEventListener("DOMContentLoaded", function (e) {
+			document.body.className = '';
+		});
+	</script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>

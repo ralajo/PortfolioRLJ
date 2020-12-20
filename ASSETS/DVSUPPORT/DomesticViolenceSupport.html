@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DomesticViolenceSupport</title>
+    <link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link href="PortfolioMain.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/rkl7csz.css">
+</head>
+
+<body>
+    <!--Logo fixed at top of page is the nav!-->
+    <a href="porthometry3.html"><img src="LOGO REDO.png" id="logo" alt="Rachel L Jones"></a>
+    <br>
+    <br>
+    <!--Here is the page header -->
+    <div class="container-fluid" id="dvtopopen">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-0">
+                <h2 class="page-title">Domestic Violence Support</h2>
+                <h1 class="page-title">How might we use a conversational user interface to help with COVID-19?</h1>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 offset-lg-3 col-md-12 offset-md-0">
+                <!--Here is the youtube API integrated -->
+                <iframe src="https://www.youtube.com/embed/KvOz_z6kOKY" frameborder="0" width="100%" height="500"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <script type="text/javascript">
+                    var tag = document.createElement('script');
+                    tag.id = 'iframe-demo';
+                    tag.src = 'https://www.youtube.com/iframe_api';
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    var player;
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('existing-iframe-example', {
+                            events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                            }
+                        });
+                    }
+                    function onPlayerReady(event) {
+                        document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+                    }
+                    function changeBorderColor(playerStatus) {
+                        var color;
+                        if (playerStatus == -1) {
+                            color = "#37474F"; // unstarted = gray
+                        } else if (playerStatus == 0) {
+                            color = "#FFFF00"; // ended = yellow
+                        } else if (playerStatus == 1) {
+                            color = "#33691E"; // playing = green
+                        } else if (playerStatus == 2) {
+                            color = "#DD2C00"; // paused = red
+                        } else if (playerStatus == 3) {
+                            color = "#AA00FF"; // buffering = purple
+                        } else if (playerStatus == 5) {
+                            color = "#FF6DOO"; // video cued = orange
+                        }
+                        if (color) {
+                            document.getElementById('existing-iframe-example').style.borderColor = color;
+                        }
+                    }
+                    function onPlayerStateChange(event) {
+                        changeBorderColor(event.data);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="container-fluid" id="startopinfobox">
+        <div class="row">
+            <div class="col-lg-3 offset-lg-3 col-md-4 offset-md-0 col-sm-12 offset-sm-0">
+                <h1>Executive Summary</h1>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <p>Domestic violence has always been a big problem, with 1/7 men and 1/4 women experiencing it during
+                    their lifetime. However, COVID-19 lockdown measures are the perfect storm for abuse as isolation
+                    traps victims with abusers who are likely to be feeling an increased lack of control due to the
+                    pandemic.</p>
+                <p> This effect can be seen in the increased interaction with the astronomical increase in Hotlines for
+                    domestic violence, across America and the world at large. While it is true that in America calls to
+                    the police for domestic violence have gone down (though not as much as other crimes).</p>
+                <p> This increase in support use has overwhelmed systems, with wait times increasing by 300%, just in
+                    the first month of lockdown in DC and a 2000% increase in text service in IL.</p>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <p>When one seeks support for domestic violence, they often need help immediately in a way that won’t
+                    aggravate the situation further. Things that do not leave a trace, like a CUI, or can be done
+                    silently like messaging can be perfect for this situation.</p>
+                <p>Created at the beginning of the pandemic, utilizing the capabilities of CUI and relying upon best
+                    practices for these situations established in social work literature we strived to address the
+                    specific needs of people attempting to flee domestic violence situations during this time.</p>
+                <p>Feel free to listen to a walkthrough of our solution above!</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 offset-lg-3 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
+            <h2>My Role</h2>
+        </div>
+        <div class="col-lg-6 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
+            <p> as a <strong> researcher</strong>...<br>I came up with the topic, and looked at exsisting sustems and
+                social work to build out a helpful tool, that reflected the social programs of pittsburgh and the best
+                practices of the field.
+                research on scanning types, to discover the info-red sensor</p>
+            <p> as a <strong> designer</strong>...<br>I organized the looping walkthrough for finding a shelter, and
+                advovated for a starker difference between vocal emergancy and silent emergency needs.</p>
+        </div>
+        <div class="col-lg-3 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
+        </div>
+    </div>
+    </div>
+    <br>
+    <!--Ok the following is just the main text stuff for the page-->
+    <div class="container-fluid" id="hsproblem">
+        <div class="row">
+            <div class="col-lg-3 offset-lg-3 col-md-4 offset-md-0 col-sm-12 offset-sm-0">
+                <h1>Problems</h1>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <p>1. Domestic Violence Hotlines do not have enough personel to suppor those who need thier help.</p>
+                <p>2. Victims, are trapped in thier houses making it harder to visit physical locations.</p>
+                <p>3. Tracability makes visiting traditional online sorces a dangerous act for those who need help.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" id="dvdsolution">
+        <div class="row">
+            <div class="col-lg-3 offset-lg-3 col-md-4 offset-md-0 col-sm-12 offset-sm-0">
+                <h1>Solution</h1>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <p>Our solution, is a CUI that helps victims access support convertly and conveniently, with its main
+                    features.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
